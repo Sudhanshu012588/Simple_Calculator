@@ -73,11 +73,11 @@
     
 }
 .clear{
-    background-color: #423784;
+    background-color: rgb(66, 55, 132);
     height: 8.5vh;
-    
     font-size: 6vh;
-    position:relative;
-    bottom: 0vh;
+    position: absolute;
+    bottom: 5vh;
+    left: -5vw;
     
 }
