@@ -1,83 +1,88 @@
-*{
+* {
     padding: 0;
     margin: 0;
-    background-color: rgb(68, 54, 137);
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-.outer_box{
-    background-color: rgb(11, 11, 115);
+body {
+    background-color: #f0f0f0;
     display: flex;
-    margin: auto;
-   margin-top: 5vh;
-    margin-bottom: 5vh;
-    height: 85vh;
-    width: 60vw;
-    
-    box-shadow: 3.2vw 0.2vw 9.2vw 10.2vw rgb(11, 11, 115);
     justify-content: center;
     align-items: center;
-    position: static;
-   
+    height: 100vh;
 }
-.display{
-    
-    background-color: rgb(40, 40, 235);
-    position: absolute;
-    border: 0.3vw solid black;
-    top: 6vh;
-    height: 25vh;
-    width: 58vw;
-    
+
+.outer_box {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-.btn{
-    border: 0.3vw solid black;
-    position: absolute;
-    height:55vh ;
-    width: 58vw;
-    top: 33vh;
-    display:  flex;
+
+.display {
+    background-color: #222;
+    color: #fff;
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    font-size: 2em;
+}
+
+.btn {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    
-}
-.num{
-    
-    position: absolute;
-    top: 0vh;
-    height:55vh ;
-    width: 27vw;
-    top: 0vh;
-    display:  flex;
-    flex-wrap: wrap;
-}
-.Numbers{
-    background-color: #423784;
-    height: 8.5vh;
-    width: 9vw;
-    text-size-adjust: 5vh;
-    font-size: 6vh;
+    width: 100%;
 }
 
-.Numbers:hover{
-    background-color: #6a5ead;
+.num, .operators {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.operators{
-    position: absolute;
-    top: 0vh;
-    height:55vh ;
-    width: 27vw;
-    top: 0vh;
-    display:  flex;
-    flex-wrap: wrap;
-    right: 0vw;
-    
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 60px;
+    flex: 1 1 22%;
+    margin: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.clear{
-    background-color: rgb(66, 55, 132);
-    height: 8.5vh;
-    font-size: 6vh;
-    position: absolute;
-    bottom: 5vh;
-    left: -5vw;
-    
+
+button:hover {
+    background-color: #45a049;
+}
+
+button.operators {
+    background-color: #f44336;
+}
+
+button.operators:hover {
+    background-color: #e53935;
+}
+
+button.clear {
+    background-color: #ff9800;
+    width: 100%;
+}
+
+button.clear:hover {
+    background-color: #fb8c00;
 }
